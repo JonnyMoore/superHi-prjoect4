@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "HK Grotesk";
+    src: url(assets/fonts/hk-grotesk.woff2), url(assets/fonts/hk-grotesk.woff);
+}
+
+body {
+font-family: "HK Grotesk", Arial;
+font-size: 36px;
+line-height: 1.25;
+color: #333;
+
+background-color: #fff;
+}
+
+div.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #333333;
+    z-index: 1;
+}
+
+header {
+    position: fixed; /* attaches the header to the browser window as opposed to the page */
+    top: 36px;
+    left: 36px;
+    z-index: 1;
+}
+
+section {
+    background-color: #c8dee0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.content {
+    position: relative; /* resets the coordinates so that the sqaure can be positioned relative to this div */
+}
+
+div.square {
+    width: 100px;
+    height: 100px;
+    background-color: #d54156;
+
+    position: absolute;
+    top: 50px;
+    left: -50px;
+}
+
+div.circle {
+    width: 100px;
+    height: 100px;
+    background-color: #5982a0;
+
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+    border-radius: 50px;
+}
+
+div.content img {
+    position: relative; /* img is below square div in html so setting this to relative puts img above sqaure as it sits lower in the html */
+}
+
+section.s2 {
+    background-color: #c5c5c5;
+}
+
+
+section.s2 div.square {
+    background-color: #d6ac35;
+}
+
+section.s2 div.circle {
+    background-color: #be3c52;
+}
+
+section.s3 {
+    background-color: #292121;
+}
+
+section.s3 div.square {
+    background-color: #5f3736;
+}
+
+section.s3 div.circle {
+    background-color: #6e5f67;
+}
+
+section.s4 {
+    background-color: #f3f1f2;
+}
+
+section.s4 div.square {
+    background-color: #d54156;
+}
+
+section.s4 div.circle {
+    background-color: #5982a0;
+}
